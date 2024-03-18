@@ -1,0 +1,94 @@
+.container-amarillo, .container-oscuro, .container-verde, .containerazulcielo, .containernegro, .containerrojo{
+    font-size: large;
+    text-align: center;
+}
+
+.containernegro{
+    background-color: black;
+    display: grid;
+    color: white;
+}
+.containerrojo{
+    background-color:#ef3d52;
+    display: grid;
+    color: white;
+}
+.containerazulcielo{
+    background-color:  #4c83c3 ;
+    display: grid;
+    color: white;
+    
+}
+.container-oscuro{
+    background-color:  #212f45 ;
+    display: grid;
+    color: white;
+    
+}
+.container-amarillo{
+    background-color:#f8d16d;
+    display: grid;
+    color: white;
+    
+}
+.container-verde{
+    background-color: #4cbb94 ;
+    display: grid;
+    color: white;
+    
+}
+.container-oliva{
+    background-color: aquamarine;
+    display: grid;
+    color: white;
+    text-align: center;
+}
+    
+    /*PARA MÓVIL*/
+
+@media (width < 425px){
+    body{
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 10px;
+    }
+}
+.containernegro, .containerrojo{
+    height: 50px;
+}
+.containerazulcielo, .container-oscuro{
+    height: 150px;
+}
+.container-amarillo, .container-verde, .container-oliva{
+    height: 65px ;
+}
+
+
+/*PARA TABLET*/
+
+@media (425px <= width <768px ){
+    body{
+        background-color: yellow;
+        display:grid; 
+        grid-template-columns: repeat(1,1,4,2fr)
+    }    
+}
+.containerrojo{
+    grid-column-start:;
+}
+.containerazulcielo{
+    height: 160px;
+}
+
+
+/*PARA PANTALLA PC*/
+
+@media (768px width >= 1024px ){
+    body{
+        background-color: green;
+    }
+
+}
+
